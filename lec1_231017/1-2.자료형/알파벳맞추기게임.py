@@ -2,12 +2,12 @@ questions = ['tr_in', 'b_s', '_axi', 'air_lane']
 answers = ['a', 'u', 't', 'p']
 
 for i in range(len(questions)):
-  q='%s에서 밑줄(_)안에 들어갈 알파벳은 ?' %questions[i]
-  ans = input(q)
-  if ans == answers[i]:
-    print('정답입니다!')
-  else:
-    print('오답입니다!')
+    q = '%s에서 밑줄(_)안에 들어갈 알파벳은 ?' % questions[i]
+    ans = input(q) # 위의 질문에 대한 답을 입력받음
+    if ans == answers[i]:
+        print('정답입니다!')
+    else:
+        print('오답입니다!')
 
 # tr_in에서 밑줄(_)안에 들어갈 알파벳은 ?a
 # 정답입니다!

@@ -1,5 +1,4 @@
 # 만 나이 계산 알고리즘
-
 print('='*50)
 now_year = int(input('현재년도:'))
 now_month = int(input('현재월:'))

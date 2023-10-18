@@ -1,3 +1,4 @@
+# 기출문제
 #  Quiz) 당신은 카카오택시 서비스를 이용하는 택시 기사님입니다.
 #  50명의 승객과 매칭 기회가 있을 때, 총 탑승 승객 수를 구하는 프로그램을 작성하시오.
 
@@ -12,14 +13,17 @@
 #  [ ] 50번째 손님 (소요시간 : 16분)
 
 
-from random import *  # 랜덤 모듈에서 모든 기능을 가져오겠다
+from random import *  # 랜덤 라이브러리에서 모든 기능을 가져오겠다
 
 count = 0
 for passenger in range(1, 51):  # 50 포함하려면 51까지 적어야함
     time = randrange(5, 51)
     if 5 <= time <= 15:  # 조건문 이렇게도 적을 수 있다: 5분 ~15분
         # format은 형식을 맞춰주는 함수임(두가지 변수를 받음)
-        print("{0}번째 손님(소요시간: {1})".format(passenger, time))
+        print("[0] {0}번째 손님(소요시간: {1})".format(passenger, time))
         count = count+1
     else:
-        print("{0}번째 손님(소요시간: {1})".format(passenger, time))
+        print("[] {0}번째 손님(소요시간: {1})".format(passenger, time))
+
+print("="*50)
+print("총 탑승 승객수: %d명" % count)
