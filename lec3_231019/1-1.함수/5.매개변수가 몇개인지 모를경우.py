@@ -1,5 +1,5 @@
 # 매개변수가 몇 개 일지 모르는 경우(*args, **kwargs)
-# 아스트릭크? 아규먼트?
+# arguments, keyword arguments
 
 # 예제1
 def args_func(*args):
