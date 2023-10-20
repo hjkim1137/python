@@ -2,13 +2,14 @@
 # arguments, keyword arguments
 
 # 예제1
-def args_func(*args):
-    print(args)
+def args_func(*hello):
+    print(hello)
 
 
 args_func("lee")
 args_func("lee", "kim")
 args_func("lee", "kim", "park")
+
 
 '''
 # 출력

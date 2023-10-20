@@ -13,7 +13,7 @@ is_palindrome = "회문입니다!"
 for i in range(len(word) // 2):
     if word[i] != word[-1 - i]:
         is_palindrome = "회문이 아닙니다!"
-        break
+        # break
 print(is_palindrome)
 
 

@@ -1,10 +1,12 @@
 import random
 import time
 
-w = ['cat', 'dog', 'fox', 'monkey', 'panda', 'frog', 'snake']
+w = ['red', 'yellow', 'blue', 'white', 'purple', 'orange', 'black']
+
 n = 1  # 통과한 문제 개수
 print("타자게임이 준비되면 enter를 치세요.")
 input()
+
 startTime = time.time()
 q = random.choice(w)
 while n <= 5:  # 5문제를  맞힐때까지 지속함

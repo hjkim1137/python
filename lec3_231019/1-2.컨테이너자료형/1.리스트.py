@@ -47,17 +47,17 @@ print('list2', list2)
 # 리스트 append
 list1 = ["kiki"]
 list1.append(8)
-print('list1', list1)
+print('append', list1)
 
 # 리스트 extend : 가장 마지막에 여러 개의 요소를 한 번에 추가
 list1 = ["kiki"]
 list1.extend([8, True])
-print('list1', list1)
+print('extend', list1)
 
 # 리스트 insert : 특정 위치(인덱스)에 요소 추가
 list1 = ["kiki", True]
 list1.insert(1, 8)  # 리스트의 두 번째 위치에 8 추가
-print('list1', list1)
+print('insert', list1)
 
 # 리스트 pop: 특정 위치의 요소 제거
 list1 = ['kiki', 8, True]

@@ -52,20 +52,26 @@ print(type(chameleon['name']), type(chameleon['color']))
 print('color' in chameleon)  # true
 print('age' not in chameleon)  # true
 
+# 방법1
 # keys, values, items
 chameleon = {'name': ('cabo', 'camely'), 'color': ['red', 'yellow']}
 print(chameleon.keys())
 print(chameleon.values())
 print(chameleon.items())
-# dict_items([('name',('cabo','camely')),('color',['red','yellow'])])
 
+# dict_keys(['name', 'color'])
+# dict_values([('cabo', 'camely'), ['red', 'yellow']])
+# items는 전체를 출력함: dict_items([('name',('cabo','camely')),('color',['red','yellow'])])
+
+# 방법 2
 #  for in 반복문
 chameleon = {'name': ('cabo', 'camely'), 'color': ['red', 'yellow']}
 # key와 value를 모두 출력
 for key in chameleon:
     print(key, chameleon[key])
+
 # key를 모두 출력
-# end=' '를 사용하여 key를 줄바꿈 대신 1칸 공백을 띄우고 출력하도록 설정
+# end=' '를 사용하여 순회시마다 줄바꿈 하지 않으며, 1칸씩 공백 설정
 for key in chameleon:
     print(key, end=' ')
 # value를 모두 출력
@@ -75,5 +81,8 @@ for key in chameleon:
 '''
 name ('cabo','camely')
 color ['red','yellow']
+'''
+
+'''
 name color ('cabo','camely') ['red','yellow']
 '''
