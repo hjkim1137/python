@@ -94,3 +94,14 @@ cir = Circle()
 print('반지름: %d' % cir.radius)
 print('원의 면적: %.2f' % cir.getArea())
 print('원주의 길이: %.2f' % cir.getCircum())
+
+# 최초 초기화 메소드
+class UserInfo:
+    def __init__(self, name): # 최초 초기화 함수
+        self.name = name
+        print("초기화: ", name)
+    def user_info_p(self):
+        print("Name: ", self.name)
+name = input("사용자 이름을 입력하세요: ")  # 사용자로부터 이름 입력 받음
+user1 = UserInfo(name)  # UserInfo 객체를 생성하면서 이름을 전달
+user1.user_info_p()  # 사용자 정보 출력
